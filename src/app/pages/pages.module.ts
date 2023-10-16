@@ -5,6 +5,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { SkillsComponent } from './skills/skills.component';
 import { AboutComponent } from './about/about.component';
+import { PagesComponent } from './pages.component';
 
 
 
@@ -13,7 +14,8 @@ import { AboutComponent } from './about/about.component';
     ProjectsComponent,
     ContactComponent,
     SkillsComponent,
-    AboutComponent
+    AboutComponent,
+    PagesComponent,
   ],
   imports: [
     CommonModule,
