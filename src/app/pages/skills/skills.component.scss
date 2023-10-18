@@ -1,0 +1,395 @@
+/* ===== SKILLS ===== */
+.skills {
+    background: whitesmoke;
+    width: 100%;
+    text-align: center;
+}
+
+.coluna-main {
+    max-width: 84vw;
+    background: #fff;
+    margin: 50px auto 0 auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px black;
+}
+
+.coluna-centralizada {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.coluna:nth-child(2) {
+    height: 100%;
+    width: calc(100% / 3);
+    border: none;
+    border-left: 1px solid rgb(207, 207, 207);
+    border-right: 1px solid rgb(207, 207, 207);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.coluna i {
+    font-size: 5.3rem;
+    margin-top: 4rem;
+}
+
+.coluna {
+    height: 100%;
+    width: calc(100% / 3);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.coluna-grupo3 {
+    padding-bottom: 3rem;
+}
+
+.colunm-title {
+    margin-top: 30px;
+    font-size: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.colunm-p {
+    font-size: 1.6rem;
+    margin-top: 30px;
+    vertical-align: inherit;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 2rem 0 2rem;
+}
+
+
+.colunm-lista{
+    list-style: none;
+    margin-top: 30px;
+}
+
+.colunm-lista li{
+    vertical-align: inherit;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    margin: 3vh 0;
+}
+
+.colunm-p2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    vertical-align: inherit;
+    font-weight: 700;
+    color: #7510F7;
+    font-family: "Raleway";
+    padding: 0 1rem 0 1rem;
+}
+
+.colunm-btn,
+.colunm-btn2,
+.colunm-btn3 {
+    margin: 1rem auto 0 auto;
+    padding: 6px 10px 6px 10px;
+    background-color: #7510F7;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    display: none;
+    margin-bottom: 5rem;
+}
+
+.git {
+    color: red;
+    text-decoration: none;
+}
+
+.git:hover {
+    transition: .3s;
+    border-bottom: 2px solid #7510F7;
+}
+
+.skills-logo-up {
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+    margin: 20vh 10px 0px 40px;
+}
+
+.skills-logo {
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+    margin: 10px 10px 10px 40px;
+    position: relative;
+    bottom: 5vh;
+}
+
+/* ===== FIM SKILLS ===== */
+
+/* ===== SLIDER ===== */
+.main-slide {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: whitesmoke;
+    flex-wrap: wrap;
+}
+
+.carrosel {
+    height: 210px;
+    width: 540px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px black;
+    margin: 3rem 2rem;
+}
+
+/* .splide__arrows{
+    display: none;
+} */
+
+.carrosel:hover {
+    cursor: pointer;
+}
+
+.titulo-slide {
+    letter-spacing: 4px;
+    font-size: 1.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2rem 0 1rem 0;
+    font-family: 'Raleway', sans-serif;
+    border-bottom: .5px solid #7510F7;
+}
+
+
+
+.slide-container {
+    letter-spacing: 4px;
+    font-size: 1.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.primeira,
+.segunda,
+.terceira,
+.quarta {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+.primeira div,
+.segunda div,
+.terceira div,
+.quarta div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 1rem;
+    flex-wrap: wrap;
+}
+
+.primeira div h2,
+.segunda div h2,
+.terceira div h2,
+.quarta div h2 {
+    font-size: 1.6rem;
+    margin: 1rem 0 1.5rem 0;
+    font-family: "Raleway";
+}
+
+
+.primeira div p,
+.segunda div p,
+.terceira div p,
+.quarta div p {
+    font-size: 1.2rem;
+    /* font-family: "Raleway"; */
+    font-family: "Lato";
+    margin: 0;
+    width: 100%;
+    text-align: left;
+
+}
+
+.primeira i,
+.segunda i,
+.terceira i,
+.quarta i {
+    font-size: 8rem;
+    color: #7510F7;
+    margin: 1rem 2rem 0px 2rem;
+}
+
+/* SLIDE FIM */
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+    .carrosel-container {
+        margin-bottom: 5rem;
+    }
+
+    .carrosel-container:nth-child(1) {
+        margin-top: 5rem;
+
+    }
+}
+
+@media (max-width: 950px) {
+    .coluna-main {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .coluna:nth-child(1) {
+        padding-right: 30px;
+    }
+
+    .coluna:nth-child(2) {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .coluna:nth-child(3) {
+        padding-left: 30px;
+    }
+
+    .colunm-p {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .coluna:nth-child(1) {
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    .coluna:nth-child(2) {
+        width: 100%;
+        display: none;
+        border: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .coluna:nth-child(3) {
+        width: 100%;
+        display: none;
+        border: none;
+        padding-left: 0;
+    }
+
+    .coluna-main {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .colunm-btn,
+    .colunm-btn2,
+    .colunm-btn3 {
+        display: block;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .carrosel {
+        width: 470px;
+        height: 210px;
+    }
+}
+
+@media (max-width: 500px) {
+    .primeira i,
+    .segunda i,
+    .terceira i,
+    .quarta i {
+        font-size: 7.5rem;
+        color: #7510F7;
+        margin: 1rem 2rem 0px 2rem;
+    }
+
+
+
+    .colunm-p {
+        font-size: 1.4rem;
+    }
+
+    .primeira div p,
+    .segunda div p,
+    .terceira div p,
+    .quarta div p {
+        font-size: 1.2rem;
+    }
+
+    .carrosel {
+        width: 400px;
+        height: 240px;
+    }
+}
+
+@media (max-width: 425px) {
+
+
+    .primeira div h2,
+    .segunda div h2,
+    .terceira div h2,
+    .quarta div h2 {
+        font-size: 1.3rem;
+        margin: 1rem 0 1rem 0;
+        font-family: "Raleway";
+    }
+
+    .primeira div p,
+    .segunda div p,
+    .terceira div p,
+    .quarta div p {
+        font-size: 1.1rem;
+    }
+
+    .carrosel {
+        width: 350px;
+        height: 240px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .primeira i,
+    .segunda i,
+    .terceira i,
+    .quarta i {
+        font-size: 7rem;
+        color: #7510F7;
+        margin: 1rem 2rem 0px 2rem;
+    }
+
+
+    .primeira div h2,
+    .segunda div h2,
+    .terceira div h2,
+    .quarta div h2 {
+        font-size: 1.2rem;
+        margin: 1rem 0 1rem 0;
+        font-family: "Raleway";
+    }
+
+    .primeira div p,
+    .segunda div p,
+    .terceira div p,
+    .quarta div p {
+        font-size: 1rem;
+    }
+
+    .carrosel {
+        width: 305px;
+        height: 245px;
+    }
+}

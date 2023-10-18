@@ -1,0 +1,108 @@
+/* Footer */ 
+
+.contato {
+    border-top: 4px solid #04c2c9;
+    background: #252934;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-title {
+    width: 100%;
+}
+
+.contato-title h2 {
+    margin-top: 50px;
+    font-size: 4.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500; 
+    line-height: 1.2; 
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.form-p {
+    color: #04c2c9;
+    vertical-align: inherit;
+    font-weight: 500;
+    margin-top: 40px;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.container-input {
+    margin: 20px 0 0px 0;
+}
+
+.input {
+    color: #fff;
+    width: 40vw;
+    background: #1e242c;
+    border: none;
+    box-sizing: border-box;
+    font-size: 12pt;
+    padding: 10px 15px;
+    margin-bottom: 3px;
+}
+
+.container-btn-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.footer-btn {
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    background: transparent;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.footer-btn:hover{
+    background: #04c2c9;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.form {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Media para 920px de width */ 
+@media (min-width: 0px) and (max-width: 489px){
+    .input{
+        width: 90vw;
+    }
+
+    .contato-title h2{
+        font-size: 4rem;
+    }
+
+    .form-p{
+        font-size: 1.4rem;
+    }
+
+}
+
+@media (min-width: 490px) and (max-width: 600px){
+    .input{
+        width: 75vw;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 720px){
+    .input{
+        width: 60vw;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 920px) {
+    .input{
+        width: 50vw;
+    }
+}

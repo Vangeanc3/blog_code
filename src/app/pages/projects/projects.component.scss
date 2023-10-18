@@ -1,0 +1,572 @@
+/* PROJETOS PORTFÓLIO */
+.projetos-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.projetos-title {
+    text-align: center;
+    font-size: 30pt;
+    text-transform: uppercase;
+    margin: 50px auto 0 auto;
+    border-bottom: 4px solid black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-bottom: 10vh;
+}
+
+.projetos-card-main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5vh 0 5vh 0;
+}
+
+.projetos-card {
+    width: 370px;
+    height: 370px;
+    border: solid black 1px;
+    margin: 25px 30px 25px 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transition: 1s;
+    // background-image: url(../../../assets/imgs/quadrado-card.webp);
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%);
+}
+
+.projetos-card:nth-child(2) {
+    background-image: url(../../../assets/imgs/instalador.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #245136;
+}
+
+.projetos-card:nth-child(1) {
+    background-image: url(../../../assets/imgs/banpara-logo.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: whitesmoke;
+}
+
+.projetos-card:nth-child(3) {
+    background-image: url(../../../assets/imgs/Cultura_Digital.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #0367ad;
+}
+
+.projetos-card-btn {
+    width: 100px;
+    padding: 5px;
+    margin-bottom: 30px;
+    opacity: 1;
+    cursor: pointer;
+    transform: translateY(0);
+    transition: 0.5s;
+    background: black;
+    color: white;
+    border: white solid 1px;
+}
+
+.projetos-card:hover {
+    filter: grayscale(0%);
+    background-size: 115%;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.projetos-card:nth-child(1):hover {
+    filter: grayscale(0%);
+    background-size: 90%;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.projetos-card:nth-child(3):hover {
+    filter: grayscale(0%);
+    background-size: 110%;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.projetos-card:hover button {
+    transition: .5s;
+}
+
+.projetos-card-btn:hover {
+    background: white;
+    color: black;
+}
+
+.card {
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px black;
+    border-radius: 15px;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-content {
+    padding: 20px;
+    transform: translateY(100px);
+    transition: 0.5s;
+    text-align: center;
+    opacity: 0;
+}
+
+.card:hover .card-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.card .card-content h3 {
+    font-size: 1.8em;
+    z-index: 1;
+}
+
+.card .card-content p {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.card .card-content a {
+    margin-top: 50px;
+    color: black;
+}
+
+/* FIM PROJETOS PORFÓLIO */
+
+/* MODAL */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: transform .8s ease-in-out;
+    transform: rotateX(-90deg);
+    visibility: hidden;
+    z-index: 20;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.visible {
+    transform: rotateX(0deg);
+    visibility: visible;
+}
+
+.fechaModal {
+    animation: fechaModal 1s forwards;
+}
+
+@keyframes fechaModal {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        transform: rotateX(-90deg);
+    }
+}
+
+.modal-wrapper {
+    margin: auto;
+    border-radius: 20px;
+    width: 80vw;
+    height: 95vh;
+    background-color: white;
+    z-index: 30;
+    padding: 3rem;
+    overflow-y: auto;
+    transform: perspective(600px) rotateX(90deg);
+}
+
+.modalAnimado {
+    animation: modalAppear 0.5s .3s ease-in-out forwards;
+    /* Adiciona animação de entrada */
+}
+
+@keyframes modalAppear {
+    0% {
+        transform: perspective(600px) rotateX(90deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: perspective(600px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+
+/* TESTE */
+
+.modal-wrapper {
+    border-radius: 20px;
+    width: 80vw;
+    height: 95vh;
+    background: white;
+    z-index: 30;
+    padding: 2rem;
+    overflow-y: scroll;
+}
+
+.modal-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #7510F7 1.5px solid;
+    position: relative;
+}
+
+.modal-titulo h2 {
+    font-size: 4rem;
+    text-align: center;
+    padding: 1rem 0 2rem 0;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Lato';
+}
+
+.modal-titulo a {
+    position: absolute;
+    right: 0;
+}
+
+.modal-titulo a i {
+    color: #000;
+    font-size: 5rem;
+}
+
+.modal-titulo a:hover i {
+    color: #7510F7;
+    font-size: 5.5rem;
+}
+
+.modal-container-conteudo {
+    margin-top: 3rem;
+}
+
+.modal-container-conteudo h3,
+.modal-container-conteudo-center h3 {
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
+    color: #7510F7;
+}
+
+.modal-container-conteudo div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.modal-container-conteudo-center div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.modal-container-conteudo-center {
+    margin-top: 3rem;
+}
+
+.modal-container-conteudo:nth-child(2) div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+/* ESTILO DE PARAGRAFO PARA PROJETOS */
+.modal-container-conteudo div p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    width: 40vw;
+    font-family: "Raleway";
+}
+
+.modal-container-conteudo-center div p {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    font-family: "Raleway";
+    text-align: left;
+}
+
+.modal-container-conteudo-center div p a {
+    color: #0367ad;
+    font-family: "Raleway";
+}
+
+.modal-container-conteudo div .modal-conteudo-ul {
+    width: 42vw;
+    list-style-type: none
+}
+
+.modal-conteudo-ul li {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    font-family: "Raleway";
+}
+
+.modal-conteudo-ul-tec li a {
+    color: #0367ad;
+    font-size: 1.6rem;
+    font-family: "Raleway";
+}
+
+.modal-container-conteudo-center div img{
+    border-radius: 20px;
+    width: 50vw;
+}
+
+.modal-container-conteudo div img {
+    width: 34vw;
+    /* height: 40vh; */
+}
+
+.modal-conteudo-img {
+    width: 34vw;
+}
+
+.modal-conteudo-titulo-center {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.last-conteudo {
+    border-top: solid #7510F7 1.5px;
+}
+
+.modal-conteudo-ul-tec {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.modal-conteudo-ul-tec li {
+    margin: 1rem 2rem;
+}
+
+.modal-conteudo-ul-tec li:hover {
+    cursor: pointer;
+}
+
+.modal-conteudo-ul-tec-linha {
+    border-bottom: #7510F7 solid 4px;
+    width: 50%;
+    margin: .3rem auto 0 auto;
+}
+
+.modal-conteudo-ul-tec li:hover .modal-conteudo-ul-tec-linha {
+    width: 100%;
+    transition: .5s;
+}
+
+.modal-fechar-wrapper {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-fechar {
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    background: rgb(37, 41, 52);
+    ;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.modal-fechar:hover {
+    background: #04c2c9;
+    transition: .5s;
+    cursor: pointer;
+}
+
+/* FIM MODAL */
+
+@media (max-width: 1100px) {
+    .modal-wrapper {
+        width: 90vw;
+    }
+
+    .modal-container-conteudo-center div p {
+        font-size: 1.6rem;
+    }
+
+    .modal-container-conteudo div p {
+        font-size: 1.5rem;
+        width: 46vw;
+    }
+
+    .modal-container-conteudo div img {
+        width: 38vw;
+    }
+
+    .modal-container-conteudo-center div img{
+        width: 65vw;
+    }
+
+    .modal-conteudo-img {
+        width: 38vw;
+    }
+
+
+    .modal-container-conteudo div .modal-conteudo-ul {
+        width: 45vw;
+    }
+
+    .modal-container-conteudo div .modal-conteudo-ul li {
+        font-size: 1.42rem;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .modal-container-conteudo div {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .modal-container-conteudo:nth-child(2) div {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-wrapper {
+        width: 95vw;
+    }
+
+    .modal-container-conteudo div p {
+        width: 85vw;
+    }
+
+    .modal-container-conteudo-center div p {
+        font-size: 1.6rem;
+    }
+
+    .modal-container-conteudo div .modal-conteudo-ul {
+        margin-top: 2rem;
+        width: 80vw;
+    }
+
+    .modal-container-conteudo div .modal-conteudo-ul li {
+        font-size: 1.5rem;
+    }
+
+    .modal-container-conteudo div img {
+        width: 80vw;
+    }
+
+    .modal-container-conteudo-center div img{
+        width: 75vw;
+    }
+
+    .modal-conteudo-img {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-titulo h2 {
+        font-size: 3rem;
+    }
+
+    .modal-titulo a i {
+        font-size: 4rem;
+    }
+
+    .modal-titulo a:hover i {
+        font-size: 4.5rem;
+    }
+
+    .modal-container-conteudo-center div p {
+        font-size: 1.5rem;
+    }
+
+    .modal-container-conteudo div p {
+        font-size: 1.5rem;
+    }
+
+    .modal-container-conteudo div .modal-conteudo-ul li {
+        font-size: 1.45rem;
+    }
+
+    .modal-conteudo-ul-tec li {
+        margin: 1rem 1rem;
+    }
+
+    .modal-conteudo-ul-tec li a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 509px) {
+    .modal-titulo h2 {
+        font-size: 2.5rem;
+    }
+
+    .modal-titulo a i {
+        font-size: 3rem;
+    }
+
+    .modal-titulo a:hover i {
+        font-size: 3.5rem;
+    }
+
+
+    .modal-container-conteudo-center div p {
+        font-size: 1.4rem;
+    }
+
+    .modal-wrapper {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .modal-conteudo-ul-tec li {
+        width: 100px;
+        margin: 1rem 1rem;
+    }
+
+    .modal-conteudo-ul-tec li a {
+        font-size: 1.4rem;
+    }
+
+    .modal-conteudo-ul-tec {
+        justify-content: space-around;
+    }
+}
